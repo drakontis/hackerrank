@@ -1,17 +1,19 @@
+# https://www.hackerrank.com/challenges/simple-array-sum
+
 #!/bin/ruby
 
 def simpleArraySum(n, ar)
-    res = 0
+  res = 0
 
-    ar.each do |elem|
-        res += elem
-    end
+  ar.each do |elem|
+    res += elem
+  end
 
-    res  
+  res
 end
 
 n = gets.strip.to_i
 ar = gets.strip
 ar = ar.split(' ').map(&:to_i)
 result = simpleArraySum(n, ar)
-puts result;
+puts result
